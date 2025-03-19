@@ -1,14 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    background-image: linear-gradient(140deg, #f175ff,  #ffc038);
+body {
+    background-image: linear-gradient(140deg, #f175ff, #ffc038);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Poppins,sans-serif;
+    font-family: Poppins;
     margin-top: 2%;
     margin-bottom: 2%;
     display: flex;
@@ -16,30 +16,30 @@ body{
     align-items: center;
 }
 
-.container{
+.container {
     width: 80%;
-    box-shadow: 1px 1px 10px black , -2px -1px 7px black;
+    box-shadow: 1px 1px 10px black, -2px -1px 7px black;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.container .side1{
+.container .side1 {
     padding: 110px 20px 0px 20px;
     background-color: rgb(64, 137, 240);
     text-align: center;
-}         
+}
 
-.container .side2{
+.container .side2 {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     row-gap: 30px;
     padding: 20px;
-    background-image: linear-gradient(90deg,#1fd1f9,#b621fe);
+    background-image: linear-gradient(90deg, #1fd1f9, #b621fe);
     position: relative;
-}         
+}
 
-.arrow{
+.arrow {
     color: black;
     font-size: 20px;
     position: absolute;
@@ -47,22 +47,26 @@ body{
     left: 20px;
 }
 
-#name,#email,#phone{
+#name,
+#email,
+#phone {
     padding: 5px 20px;
     padding-right: 40px;
     border-radius: 5px;
     border: none;
     outline: none;
+    font-family: Poppins;
 }
 
-#message{
+#message {
     padding: 5px;
     border-radius: 5px;
-    border:none;
-    outline:none;
+    border: none;
+    outline: none;
+    font-family: Poppins;
 }
 
-#submit{
+#submit {
     padding: 5px 50px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -74,14 +78,34 @@ body{
 }
 
 
-@media  screen and (max-width:767px) {
-    .side1{
+/* Small devices (landscape phones, up to 768px) */
+@media screen and (max-width: 768px) {
+
+    /* Contact page specific */
+    .container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .side1 {
         display: none;
     }
-    .side2{
-        width: 380px;
+
+    .side2 {
+        width: 100%;
     }
-    .container{
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .container {
         margin: 50px;
+    }
+
+    .container .side2 {
+        .side2 {
+            width: 100px;
+        }
     }
 }
