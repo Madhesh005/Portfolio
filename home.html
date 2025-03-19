@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-
     <!--Linking Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -22,20 +21,22 @@
 <body>
     <header class="box">
         <h1 class="title">Portfolio</h1>
+        <div class="mobile-navigation">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
-
 
     <main class="main">
         <img src="asset/madhesh.jpeg" alt="madhesh" class="img">
         <h1 class="line1">Hi, I'm Madhesh</h1>
         <h1 class="line2">| FRONT-END</h1>
         <h1 class="line3">|WEB DEVELOPER</h1>
-        <a href="contact.html" class="reachout"> Reach Out</a>
+        <a href="contact.html" class="reachout">Reach Out</a>
         <div class="context">
             <p>Passionate Frontend web developer specialized in building stunning websites</p>
         </div>
         <div class="about-area">
-            <h1 style="text-align:center">About me</h1>
+            <h1>About me</h1>
             <div class="about-section">
                 <div class="about-content">
                     <p>
@@ -50,17 +51,17 @@
                     </p>
                 </div>
                 <div class="image-content">
-                    <img src="asset/madhesh.jpeg" alt="profile-pic" width="300px" height="350px">
+                    <img src="asset/madhesh.jpeg" alt="profile-pic">
                 </div>
             </div>
         </div>
 
         <div class="project-area">
-            <h1 style="text-align: center;">Projects</h1>
+            <h1 style="text-align: center; font-size: 45px;">Projects</h1>
             <div class="project-section">
                 <div class="tictactoe">
                     <h1>Tic Tac Toe
-                        <a href="TicTacToe/index.html" target="_blank">
+                        <a href="TicTacToe/" target="_blank">
                             <i class='fas fa-arrow-right arrow'></i>
                         </a>
                     </h1>
@@ -98,7 +99,7 @@
                 </div>
 
                 <div class="temperature">
-                    <h1 style="font-size: 25px;">Temperature Conversion
+                    <h1>Temperature Conversion
                         <a href="Temperature_Conversion_Program/index.html" target="_blank">
                             <i class='fas fa-arrow-right arrow'></i>
                         </a>
@@ -114,10 +115,10 @@
         </div>
 
         <div class="skills-area">
-            <h1 style="text-align: center">MY Skills</h1>
+            <h1>MY Skills</h1>
             <div class="skills-section">
                 <div class="html5">
-                    <img src="Asset/html5-icon-1.png" alt="html5" width="100px" height="100px">
+                    <img src="Asset/html5-icon-1.png" alt="html5">
                     <div class="explored">
                         <p>
                             I learned to structure web pages using HTML, including elements such as headings,
@@ -126,10 +127,9 @@
                             hyperlinks.
                         </p>
                     </div>
-
                 </div>
                 <div class="css">
-                    <img src="Asset/css3-icon-28.jpg" alt="css" width="100px" height="100px">
+                    <img src="Asset/css3-icon-28.jpg" alt="css">
                     <div class="explored">
                         <p>
                             I learned to style web pages with CSS, focusing on layout, color, and typography. I became
@@ -140,7 +140,7 @@
                     </div>
                 </div>
                 <div class="js">
-                    <img src="Asset/js-icon-1.png" alt="js" width="90px" height="90px">
+                    <img src="Asset/js-icon-1.png" alt="js">
                     <div class="explored">
                         <p>
                             I learned to add interactivity to web pages using JavaScript, covering basics like
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="c">
-                    <img src="Asset/letter_c_PNG22.png" alt="C" width="100px" height="100px">
+                    <img src="Asset/letter_c_PNG22.png" alt="C">
                     <div class="explored">
                         <p>I learned the fundamentals of programming with C, including data types, operators, and
                             control flow statements. I gained a deep understanding of pointers, memory management, and
@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <div class="c++">
-                    <img src="Asset/c--logo-icon-0.png" alt="C++" width="100px" height="100px">
+                    <img src="Asset/c--logo-icon-0.png" alt="C++">
                     <div class="explored">
                         <p>
                             I built upon my C knowledge by learning C++, focusing on object-oriented programming
@@ -173,7 +173,7 @@
                     </div>
                 </div>
                 <div class="python">
-                    <img src="Asset/python-logo.png" alt="python" width="100px" height="100px">
+                    <img src="Asset/python-logo.png" alt="python">
                     <div class="explored">
                         <p>
                             I learned Python for its simplicity and versatility, starting with basic syntax, data types,
@@ -208,6 +208,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Basic mobile navigation toggle
+        document.querySelector('.mobile-navigation').addEventListener('click', function() {
+            alert('Mobile menu functionality can be implemented here');
+            // You could add a slide-out menu or dropdown here
+        });
+    </script>
 </body>
 
 </html>
